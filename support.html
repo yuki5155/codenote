@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CodeNote サポート</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<h1>CodeNote サポート</h1>
+<p>質問に合わせて AI が Python のコードを書き、iPhone の中の隔離された環境で実行して答えるアプリです。</p>
+
+<h2>はじめに必要なもの</h2>
+<p>チャットには、Claude の APIキーが必要です。</p>
+<ol>
+<li><a href="https://console.anthropic.com/settings/keys">Claude Console</a> でアカウントを作り、支払い方法を登録します。</li>
+<li>「API Keys」から APIキーを作成してコピーします。</li>
+<li>CodeNote の「設定」タブに貼り付けて保存します。</li>
+</ol>
+<p>利用料は Anthropic から利用者のアカウントに請求されます。</p>
+
+<h2>よくある質問</h2>
+<h3>AI が書いたコードは安全ですか？</h3>
+<p>コードは実行前に必ず確認画面に表示され、書き換えたり断ったりできます。実行は iPhone の中の隔離された環境 (ブラウザの仕組みを使った Python) で行い、アプリのデータや Keychain には触れられません。15 秒で自動的に止まります。</p>
+<h3>インターネットのデータを使いたい</h3>
+<p>「許可リスト」タブでドメインを登録すると、スクリプトからそのドメインのデータを取得できます。登録していないドメインとは通信できません。</p>
+<h3>外部の API を使いたい</h3>
+<p>チャットで「〇〇の API を使いたい」と頼むと、AI が API キーの入れ物を作ります。値は「設定」→「API キー」で入力してください。値は AI にもスクリプトにも見えず、登録した送信先への通信にだけ使われます。</p>
+<h3>PDF や CSV を読ませたい</h3>
+<p>チャットの入力欄の 📎 から添付できます。Excel で書き出した CSV (Shift_JIS) にも対応しています。</p>
+<h3>作った関数を保存・共有したい</h3>
+<p>チャットで「この関数を保存して」と頼むと、ライブラリに保存され、以後のスクリプトから使えます。「ライブラリ」タブから QR コードやファイル (AirDrop など) で他の人に送れます。</p>
+<h3>AI に送るデータを確認したい</h3>
+<p>「設定」の「AI の利用」と、<a href="privacy.html">プライバシーポリシー</a> をご覧ください。</p>
+
+<h2>お問い合わせ</h2>
+<p>メール: <a href="mailto:yukiafree@gmail.com">yukiafree@gmail.com</a></p>
+
+<footer><p><a href="privacy.html">プライバシーポリシー</a></p></footer>
+</main>
+</body>
+</html>
